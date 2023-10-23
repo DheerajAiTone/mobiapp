@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "mobiapp-staging"
+client_id = "274b6325a82279aafeba0b29bb5382d4"
+application_url = "https://pig-tournaments-agree-longest.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://pig-tournaments-agree-longest.trycloudflare.com/auth/callback",
+  "https://pig-tournaments-agree-longest.trycloudflare.com/auth/shopify/callback",
+  "https://pig-tournaments-agree-longest.trycloudflare.com/api/auth/callback",
+  "https://pig-tournaments-agree-longest.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "jinxystore.myshopify.com"
