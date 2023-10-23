@@ -2,7 +2,7 @@
 
 name = "mobiapp-staging"
 client_id = "274b6325a82279aafeba0b29bb5382d4"
-application_url = "https://pig-tournaments-agree-longest.trycloudflare.com"
+application_url = "https://structured-omissions-observations-leg.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,10 +11,10 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://pig-tournaments-agree-longest.trycloudflare.com/auth/callback",
-  "https://pig-tournaments-agree-longest.trycloudflare.com/auth/shopify/callback",
-  "https://pig-tournaments-agree-longest.trycloudflare.com/api/auth/callback",
-  "https://pig-tournaments-agree-longest.trycloudflare.com/.shopify/graphiql/auth/callback"
+  "https://structured-omissions-observations-leg.trycloudflare.com/auth/callback",
+  "https://structured-omissions-observations-leg.trycloudflare.com/auth/shopify/callback",
+  "https://structured-omissions-observations-leg.trycloudflare.com/api/auth/callback",
+  "https://structured-omissions-observations-leg.trycloudflare.com/.shopify/graphiql/auth/callback"
 ]
 
 [webhooks]

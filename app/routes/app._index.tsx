@@ -1,18 +1,24 @@
-import { Layout, Page } from "@shopify/polaris";
+import { Layout, Page, Text, Button } from "@shopify/polaris";
 import React from "react";
-import overviewStyles from "./styles/app-overview.css";
+
 function Overview() {
   return (
     <div>
       <ui-title-bar title="Overview">
-        <button id="launchButton">Preview</button>
-        <button variant="primary" className="launchButton">
-          Launch apps
-        </button>
+        <button className="bg-green-500">Preview</button>
+        <button variant="primary">Launch apps</button>
       </ui-title-bar>
-      <Page>
+      <Page narrowWidth>
         <Layout>
-          <Layout.Section></Layout.Section>
+          <Layout.Section>
+            <Text as="p" variant="heading2xl">
+              OVERVIEW
+            </Text>
+            <div className=" text-green-500">hello</div>
+            <Button tone="success" variant="primary" size="medium">
+              Success
+            </Button>
+          </Layout.Section>
         </Layout>
       </Page>
     </div>
@@ -20,4 +26,4 @@ function Overview() {
 }
 
 export default Overview;
-export const links = () => [{ rel: "stylesheet", href: overviewStyles }];
+// export const links = () => [{ rel: "stylesheet", href: overviewStyles }];
